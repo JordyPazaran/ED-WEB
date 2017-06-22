@@ -1,0 +1,437 @@
+<!-- HECHO POR JORDY XAVIER PAZARAN REYES -->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Jordy Xavier</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <script src="js/preguntas.js" type="text/javascript" charset="utf-8"></script>
+  </head>
+  <body>
+
+<ul id="dropdown1" class="dropdown-content">
+<li class=""><a href="texto.html">Inicio</a></li>
+<li class=""><a href="multi.html">Multimedia</a></li>
+  <li  class=""><a href="pdfs.html">PDFs</a></li>
+  <li class=""><a href="ejer.html">Ejercicios</a></li>
+  <li class="divider"></li>
+  <li class=""><a href="biblio.html">Bibliogrfía</a></li>
+</ul>
+<ul id="dropdown2" class="dropdown-content">
+<li class=""><a href="texto.html">Inicio</a></li>
+   <li class=""><a href="multi.html">Multimedia</a></li>
+  <li><a href="pdfs.html">PDFs</a></li>
+  <li><a href="ejer.html">Ejercicios</a></li>
+  <li class="divider"></li>
+  <li><a href="biblio.html">Bibliogrfía</a></li>
+</ul>
+    <main>
+<nav class="nav-extended">
+    <div class="nav-wrapper  grey">
+      <a class="brand-logo center" href="http://www.ingenieria.unam.mx/">&nbsp;&nbsp;&nbsp;<img class="responsive-img" src="resources/fiunam.png" width="40" height="300"/></a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+
+    </div>
+<!-- HECHO POR JORDY XAVIER PAZARAN REYES -->
+  <div class="row red darken-3">
+    <div class="nav-wrapper ">
+      <ul id="nav-mobile" class="center hide-on-med-and-down">
+              <div class="col s1"></div>
+              <div class="col s3 "><li class=""><a href="index.html">Inicio</a></li></div>
+              <div class="col s3 "> <li class=""><a class="dropdown-button" href="#!" data-activates="dropdown1">Tutorial<i class="material-icons right"></i></a></li></div>
+              <div class="col s3 "><li class="active"><a href="cuestionario.html">Cuestionario</a></li></div>
+              <div class="col s1 "></div>
+              <div class="col s2 "><li class=""><a href="quienes.html">Acerca de mi</a></li></div>
+
+
+
+        </ul>
+      </div>
+    </div>
+              
+      <ul class="side-nav red darken-3" id="mobile-demo">
+
+              <div class="chip  grey lighten-2">
+    <img src="resources/fiunam.png" alt="Contact Person">
+    Pazaran Reyes Jordy Xavier
+  </div>
+              <li class=""><a href="index.html">Inicio</a></li>
+              <li class="active"><a class="dropdown-button" href="#!" data-activates="dropdown2">Tutorial<i class="material-icons right"></i></a></li>
+              <li class=""><a href="cuestionario.html">Cuestionario</a></li>
+              <li class=""><a href="quienes.html">Acerca de mi</a></li>
+      </ul>
+    </div>
+  </nav>
+ 
+        <br></br>   <br></br>
+
+
+    <div class="white-wrapper">
+      <div class="container white-section-padding-top">
+        <div class="sixteen columns">
+            <div class="sixteen columns white-section-padding-bottom-medium">
+              <h3 align="center">Cuestionario</h3>
+              <h4>Pregunta 1</h4>
+              <hr>
+              <p id="p1"></p>
+              <script>
+                document.getElementById("p1").innerHTML = cuestionario[nums[0]][0];
+              </script>
+              <div class="row">
+              <div class="col-lg-3">
+              </div>  
+                <div class="col-lg-6">
+                  <div class="radio" >
+                    
+                <p>
+                    <input name="opciones1" type="radio" id="test1"/>
+                    <label for="test1" id="p101"></label>
+                  </p>
+                  <script>
+                        document.getElementById("p101").innerHTML = cuestionario[nums[0]][2][0];
+                    </script>
+                </div>
+                <div class="radio">
+                  <p>
+                    <input name="opciones1" type="radio" id="test2"/>
+                    <label for="test2" id="p102"></label>
+                  </p>
+                  <script>
+                        document.getElementById("p102").innerHTML = cuestionario[nums[0]][2][1];
+                    </script>
+                  </label>
+                </div>
+                <div class="radio">
+                  <p>
+                    <input name="opciones1" type="radio" id="test3"/>
+                    <label for="test3" id="p103"></label>
+                  </p>
+                  <script>
+                        document.getElementById("p103").innerHTML = cuestionario[nums[0]][2][2];
+                    </script>
+                </div>
+                <div class="radio" >
+                  <p>
+                    <input name="opciones1" type="radio" id="test4"/>
+                    <label for="test4" id="p104"></label>
+                  </p>
+                  <script>
+                        document.getElementById("p104").innerHTML = cuestionario[nums[0]][2][3];
+                    </script>
+                  </label>
+                </div>
+                </div><!-- /.col-lg-6 -->
+              </div><!-- /.row -->
+              <h4>Pregunta 2</h4>
+              <hr>
+              <p id="p2" ></p>
+              <script>
+                document.getElementById("p2").innerHTML = cuestionario[nums[1]][0];
+              </script>
+              <div class="row">
+              <div class="col-lg-3">
+              </div>  
+                <div class="col-lg-6">
+                  <div class="radio" >
+                    
+                <p>
+                    <input name="opciones2" type="radio" id="test1_2"/>
+                    <label for="test1_2" id="p201"></label>
+                  </p>
+                  <script>
+                        document.getElementById("p201").innerHTML = cuestionario[nums[1]][2][0];
+                    </script>
+                </div>
+                <div class="radio">
+                  <p>
+                    <input name="opciones2" type="radio" id="test2_2"/>
+                    <label for="test2_2" id="p202"></label>
+                  </p>
+                  <script>
+                        document.getElementById("p202").innerHTML = cuestionario[nums[1]][2][1];
+                    </script>
+                  </label>
+                </div>
+                <div class="radio">
+                  <p>
+                    <input name="opciones2" type="radio" id="test3_2"/>
+                    <label for="test3_2" id="p203"></label>
+                  </p>
+                  <script>
+                        document.getElementById("p203").innerHTML = cuestionario[nums[1]][2][2];
+                    </script>
+                </div>
+                <div class="radio" >
+                  <p>
+                    <input name="opciones2" type="radio" id="test4_2"/>
+                    <label for="test4_2" id="p204"></label>
+                  </p>
+                  <script>
+                        document.getElementById("p204").innerHTML = cuestionario[nums[1]][2][3];
+                    </script>
+                  </label>
+                </div>
+                </div><!-- /.col-lg-6 -->
+              </div><!-- /.row -->
+              <h4>Pregunta 3</h4>
+              <hr>
+              <p id="p3" ></p>
+              <script>
+                document.getElementById("p3").innerHTML = cuestionario[nums[2]][0];
+              </script>
+              <div class="row">
+              <div class="col-lg-3">
+              </div>  
+                <div class="col-lg-6">
+                  <div class="radio" >
+                    
+                <p>
+                    <input name="opciones3" type="radio" id="test1_3"/>
+                    <label for="test1_3" id="p301"></label>
+                  </p>
+                  <script>
+                        document.getElementById("p301").innerHTML = cuestionario[nums[2]][2][0];
+                    </script>
+                </div>
+                <div class="radio">
+                  <p>
+                    <input name="opciones3" type="radio" id="test2_3"/>
+                    <label for="test2_3" id="p302"></label>
+                  </p>
+                  <script>
+                        document.getElementById("p302").innerHTML = cuestionario[nums[2]][2][1];
+                    </script>
+                  </label>
+                </div>
+                <div class="radio">
+                  <p>
+                    <input name="opciones3" type="radio" id="test3_3"/>
+                    <label for="test3_3" id="p303"></label>
+                  </p>
+                  <script>
+                        document.getElementById("p303").innerHTML = cuestionario[nums[2]][2][2];
+                    </script>
+                </div>
+                <div class="radio">
+                  <p>
+                    <input name="opciones3" type="radio" id="test4_3"/>
+                    <label for="test4_3" id="p304"></label>
+                  </p>
+                  <script>
+                        document.getElementById("p304").innerHTML = cuestionario[nums[2]][2][3];
+                    </script>
+                  </label>
+                </div>
+                </div><!-- /.col-lg-6 -->
+              </div><!-- /.row -->
+              <h4>Pregunta 4</h4>
+              <hr>
+              <p id="p4" ></p>
+              <script>
+                document.getElementById("p4").innerHTML = cuestionario[nums[3]][0];
+              </script>
+              <div class="row">
+              <div class="col-lg-3">
+              </div>  
+                <div class="col-lg-6">
+                  <div class="radio" >
+                    
+                <p>
+                    <input name="opciones4" type="radio" id="test1_4"/>
+                    <label for="test1_4" id="p401"></label>
+                  </p>
+                  <script>
+                        document.getElementById("p401").innerHTML = cuestionario[nums[3]][2][0];
+                    </script>
+                </div>
+                <div class="radio">
+                  <p>
+                    <input name="opciones4" type="radio" id="test2_4"/>
+                    <label for="test2_4" id="p402"></label>
+                  </p>
+                  <script>
+                        document.getElementById("p402").innerHTML = cuestionario[nums[3]][2][1];
+                    </script>
+                  </label>
+                </div>
+                <div class="radio">
+                  <p>
+                    <input name="opciones4" type="radio" id="test3_4"/>
+                    <label for="test3_4" id="p403"></label>
+                  </p>
+                  <script>
+                        document.getElementById("p403").innerHTML = cuestionario[nums[3]][2][2];
+                    </script>
+                </div>
+                <div class="radio">
+                  <p>
+                    <input name="opciones4" type="radio" id="test4_4"/>
+                    <label for="test4_4" id="p404"></label>
+                  </p>
+                  <script>
+                        document.getElementById("p404").innerHTML = cuestionario[nums[3]][2][3];
+                    </script>
+                  </label>
+                </div>
+                </div><!-- /.col-lg-6 -->
+              </div><!-- /.row -->
+              <h4>Pregunta 5</h4>
+              <hr>
+              <p id="p5" ></p>
+              <script>
+                document.getElementById("p5").innerHTML = cuestionario[nums[4]][0];
+              </script>
+              <div class="row">
+              <div class="col-lg-3">
+              </div>  
+                <div class="col-lg-6">
+                  <div class="radio" >
+                    
+                <p>
+                    <input name="opciones5" type="radio" id="test1_5"/>
+                    <label for="test1_5" id="p501"></label>
+                  </p>
+                  <script>
+                        document.getElementById("p501").innerHTML = cuestionario[nums[4]][2][0];
+                    </script>
+                </div>
+                <div class="radio">
+                  <p>
+                    <input name="opciones5" type="radio" id="test2_5"/>
+                    <label for="test2_5" id="p502"></label>
+                  </p>
+                  <script>
+                        document.getElementById("p502").innerHTML = cuestionario[nums[4]][2][1];
+                    </script>
+                  </label>
+                </div>
+                <div class="radio">
+                  <p>
+                    <input name="opciones5" type="radio" id="test3_5"/>
+                    <label for="test3_5" id="p503"></label>
+                  </p>
+                  <script>
+                        document.getElementById("p503").innerHTML = cuestionario[nums[4]][2][2];
+                    </script>
+                </div>
+                <div class="radio">
+                  <p>
+                    <input name="opciones5" type="radio" id="test4_5"/>
+                    <label for="test4_5" id="p504"></label>
+                  </p>
+                  <script>
+                        document.getElementById("p504").innerHTML = cuestionario[nums[4]][2][3];
+                    </script>
+                  </label>
+                </div>
+                </div>
+              </div>
+
+    
+              
+              <br>
+              <center>
+                <a class="btn btn-lg btn-primary" role="button" onClick="calificar()">Enviar</a>
+              </center>
+              <br>
+          </div>
+        </div>  
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col m8 offset-m2">
+        <center>
+        <h4 id="pres" style="display: none;">Tu calificación es:</h4>
+        <hr>
+        <h5 id="res" style="color:black; text-shadow: none;"></h5>
+        <br>
+        </center>
+      </div>
+    </div>
+
+    
+    
+
+
+</main>
+
+     <footer class="page-footer  grey darken-3">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5>Dirección</h5>
+                <p class="grey-text text-lighten-4">Circuito Interior s/n, Coyoacán, Ciudad Universitaria, 04510 Ciudad de México, CDMX
+Facultad de Ingenieria UNAMM</p>
+
+                <h5>Teléfonos</h5>
+                <p class="grey-text text-lighten-4">(52)5565014640</p>
+              </div>
+
+              <div class="col l4 offset-l2 s12">
+                <h5>Correo</h5> <span class="white-text">jordyxavierfi@gmail.com</span><br>
+
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            <center>
+            <a > ©Jordy Xavier </a>
+            </center>
+            </div>
+          </div>
+  </footer>
+
+  <!--  Scripts-->
+  <script src="js/jquery-2.1.1.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  <script>
+                function calificar() {
+                  var calif = 0;
+                  
+                  var res1=document.getElementsByName("opciones1");
+                  var res2=document.getElementsByName("opciones2");
+                  var res3=document.getElementsByName("opciones3");
+                  var res4=document.getElementsByName("opciones4");
+                  var res5=document.getElementsByName("opciones5");
+                  
+                      
+                  var op1=cuestionario[nums[0]][1]-1;
+                  var op2=cuestionario[nums[1]][1]-1;
+                  var op3=cuestionario[nums[2]][1]-1;
+                  var op4=cuestionario[nums[3]][1]-1;
+                  var op5=cuestionario[nums[4]][1]-1;
+                  
+
+                  
+                    if(res1[op1].checked)
+                      calif++;
+                    if(res2[op2].checked)
+                      calif++;
+                    if(res3[op3].checked)
+                      calif++;
+                    if(res4[op4].checked)
+                      calif++;
+                    if(res5[op5].checked)
+                      calif++;
+                
+
+                  //alert("Tu calificacion es: "+calif);
+                  document.getElementById("res").innerHTML = calif*2;
+                  $('#pres').show();
+
+                  
+                }
+
+
+              </script>
+
+  </body>
+</html>

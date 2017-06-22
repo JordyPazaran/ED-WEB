@@ -1,0 +1,130 @@
+<!-- HECHO POR JORDY XAVIER PAZARAN REYES -->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Jordy Xavier</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  </head>
+  <body>
+
+<ul id="dropdown1" class="dropdown-content">
+<li class="active"><a href="texto.html">Inicio</a></li>
+<li class=""><a href="multi.html">Multimedia</a></li>
+  <li  class=""><a href="pdfs.html">PDFs</a></li>
+  <li class=""><a href="ejer.html">Ejercicios</a></li>
+  <li class="divider"></li>
+  <li class=""><a href="biblio.html">Bibliogrfía</a></li>
+</ul>
+<ul id="dropdown2" class="dropdown-content">
+  <li class="active"><a href="texto.html">Inicio</a></li>
+   <li class=""><a href="multi.html">Multimedia</a></li>
+  <li><a href="pdfs.html">PDFs</a></li>
+  <li><a href="ejer.html">Ejercicios</a></li>
+  <li class="divider"></li>
+  <li><a href="biblio.html">Bibliogrfía</a></li>
+</ul>
+    <main>
+      <nav class="nav-extended">
+    <div class="nav-wrapper  grey">
+      <a class="brand-logo center" href="http://www.ingenieria.unam.mx/">&nbsp;&nbsp;&nbsp;<img class="responsive-img" src="resources/fiunam.png" width="40" height="300"/></a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+<!-- HECHO POR JORDY XAVIER PAZARAN REYES -->
+    </div>
+   <div class="row red darken-3">
+    <div class="nav-wrapper ">
+      <ul id="nav-mobile" class="center hide-on-med-and-down">
+              <div class="col s1"></div>
+              <div class="col s3 "><li ><a href="index.html">Inicio</a></li></div>
+              <div class="col s3 "> <li class="active"><a class="dropdown-button" href="#!" data-activates="dropdown1">Tutorial<i class="material-icons right"></i></a></li></div>
+              <div class="col s3 "><li class=""><a href="cuestionario.html">Cuestionario</a></li></div>
+              <div class="col s1 "></div>
+              <div class="col s2 "><li class=""><a href="quienes.html">Acerca de mi</a></li></div>
+
+
+
+        </ul>
+      </div>
+    </div>
+
+              
+      <ul class="side-nav red darken-3" id="mobile-demo">
+
+              <div class="chip  grey lighten-2">
+    <img src="resources/fiunam.png" alt="Contact Person">
+    Pazaran Reyes Jordy Xavier
+  </div>
+              <li class=""><a href="index.html">Inicio</a></li>
+              <li class="active"><a class="dropdown-button" href="#!" data-activates="dropdown2">Tutorial<i class="material-icons right"></i></a></li>
+              <li class=""><a href="cuestionario.html">Cuestionario</a></li>
+              <li class=""><a href="quienes.html">Acerca de mi</a></li>
+      </ul>
+    </div>
+  </nav>
+ <!-- HECHO POR JORDY XAVIER PAZARAN REYES -->
+        <br></br>   <br></br>
+
+   <div class="row">
+  <div class="col s12 m10 offset-m1">
+    <h3 class="center">Insercción </h3>
+El procedimiento de inserción en un árbol binario de búsqueda es muy sencillo, únicamente hay que tener cuidado de no romper la estructura ni el orden del árbol. Cuando se inserta un nuevo nodo en el árbol hay que tener en cuenta que cada nodo no puede tener más de dos hijos, por esta razón si un nodo ya tiene 2 hijos, el nuevo nodo nunca se podrá insertar como su hijo. Con esta restricción nos aseguramos mantener la estructura del árbol, pero aún nos falta mantener el orden. Para localizar el lugar adecuado del árbol donde insertar el nuevo nodo se realizan comparaciones entre los nodos del árbol y el elemento a insertar. El primer nodo que se compara es la raíz, si el nuevo nodo es menor que la raíz, la búsqueda prosigue por el nodo izquierdo de éste. Si el nuevo nodo fuese mayor, la búsqueda seguiría por el hijo derecho de la raíz. Este procedimiento es recursivo, y su condición de parada es llegar a un nodo que no tenga hijo en la rama por la que la búsqueda debería seguir. En este caso el nuevo nodo se inserta en ese hueco, como su nuevo hijo. <br> Para administrar un árbol binario ordenado debemos tener especial cuidado en la inserción.
+Inicialmente el árbol está vacío, es decir raíz apunta a null:<br><CENTER><BR><IMG SRC="resources/ins1.jpg" width="400" height="400" ><P> Insertamos el 400 <br><CENTER><BR><IMG SRC="resources/ins2.jpg" width="400" height="400" ><br>Insertamos el valor 100. Debemos analizar si raíz es distinto a null verificamos si 100 es mayor o menor a la información del nodo apuntado por raíz, en este caso es menor y como el subárbol izquierdo es null debemos insertarlo allí.<br><CENTER><BR><IMG SRC="resources/ins3.jpg" width="400" height="400" ><P> Insertamos el 200. Hay que tener en cuenta que siempre comenzamos las comparaciones a partir de raíz. El 200 es menor que 400, descendemos por el subárbol izquierdo. Luego analizamos y vemos que el 200 es mayor a 100, debemos avanzar por derecha. Como el subárbol derecho es null lo insertamos en dicha posición.<br><CENTER><BR><IMG SRC="resources/ins4.jpg" width="400" height="400" ><P> Insertamos el 700 y el árbol será: <br><CENTER><BR><IMG SRC="resources/ins5.jpg" width="400" height="400" ><P> Como podemos observar si cada vez que insertamos un nodo respetamos este algoritmo siempre estaremos en presencia de un árbol binario ordenado. Posteriormente veremos el algoritmo en java para la inserción de información en el árbol.
+<center><br><p></p>
+  
+
+
+
+  <ul class="pagination center">
+    <li class="disabled"><a href="texto3.html"><i class="material-icons">chevron_left</i></a></li>
+    <li class="waves-effect"><a href="texto.html">1</a></li>
+    <li class="waves-effect"><a href="texto2.html">2</a></li>
+    <li class="waves-effect"><a href="texto3.html">3</a></li>
+    <li class="active"><a href="texto4.html">4</a></li>
+    <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+  </ul>
+
+    </main>
+     <footer class="page-footer  grey darken-3">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5>Dirección</h5>
+                <p class="grey-text text-lighten-4">Circuito Interior s/n, Coyoacán, Ciudad Universitaria, 04510 Ciudad de México, CDMX
+Facultad de Ingenieria UNAMM</p>
+
+                <h5>Teléfonos</h5>
+                <p class="grey-text text-lighten-4">(52)5565014640</p>
+              </div>
+
+              <div class="col l4 offset-l2 s12">
+                <h5>Correo</h5> <span class="white-text">jordyxavierfi@gmail.com</span><br>
+
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            <center>
+            <a > ©Jordy Xavier </a>
+            </center>
+            </div>
+          </div>
+  </footer>
+
+  <!--  Scripts-->
+  <script src="js/jquery-2.1.1.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      $('.slider').slider({full_width: true});
+    });
+  </script>
+
+  </body>
+</html>

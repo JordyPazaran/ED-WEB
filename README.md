@@ -1,2 +1,1 @@
-# ED-WEB
-Pagina web para la clase de ED con cuestionario
+<h1>Proyecto para la clínica Guadalupe</h1>

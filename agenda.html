@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Clínica Guadalupe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  </head>
+  <body>
+
+    <main>
+      <div class="navbar-fixed">
+        <nav>
+          <div class="nav-wrapper amber lighten-4">
+            <a class="brand-logo" href="index.html">&nbsp;&nbsp;&nbsp;Clínica Guadalupe</a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+              <li class=""><a href="index.html">Inicio</a></li>
+              <li class=""><a href="especialidad.html">Especialidades</a></li>
+              <li class="active"><a href="agenda.html">Agenda una cita</a></li>
+              <li class=""><a href="quienes.html">¿Quiénes somos?</a></li>
+            </ul>
+            <ul class="side-nav oro" id="mobile-demo">
+              <li class=""><a href="index.html">Inicio</a></li>
+              <li class=""><a href="especialidad.html">Especialidades</a></li>
+              <li class="active"><a href="agenda.html">Agenda una cita</a></li>
+              <li class=""><a href="quienes.html">¿Quiénes somos?</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </main>
+
+    <div class="row">
+      <h4 class="center">Agenda una cita</h4>
+      <form action="inputCita.php" method="get">
+        <div class="row">
+          <div class="input-field col s12">
+              <input id="nombre" type="text" name="nombre">
+              <label for="nombre">Nombre(s)</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s6">
+            <input id="ap" type="text" name="apellidoPa">
+            <label for="ap">Primer Apellido</label>
+          </div>
+          <div class="input-field col s6">
+            <input id="am" type="text" name="apellidoMa">
+            <label for="am">Segundo Apellido</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="edad" type="text" name="edad">
+            <label for="edad">Edad</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="sangre" type="text" name="sangre">
+            <label for="sangre">Sangre</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="domicilio" type="text" name="domicilio">
+            <label for="domicilio">Domicilio</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="alergias" type="text" name="alergias">
+            <label for="alergias">Alergias</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="correo" type="text" name="correo">
+            <label for="correo">Correo</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="tel" type="text" name="telefono">
+            <label for="tel">Teléfono</label>
+          </div>
+          
+        </div>
+
+        <p>Especialidad</p>
+        <p>
+          <input type="radio" id="test1" name="especialidad" value="especialidad1" />
+            <label for="test1">Especialidad 1</label>
+          </p>
+          <p>
+            <input type="radio" id="test2" name="especialidad" value="especialidad2" />
+            <label for="test2">Especialidad 2</label>
+          </p>
+          <p>
+            <input type="radio" id="test3" name="especialidad" value="especialidad3" />
+            <label for="test3">Especialidad 3</label>
+          </p>
+          <p>
+            <input type="radio" id="test4" name="especialidad" value="especialidad4" />
+            <label for="test3">Especialidad 4</label>
+          </p> 
+        </p>
+
+        <p>Fecha (YYYY-MM-DD)</p>
+          <input type="text" name="fecha">
+
+        <p>Hora</p>
+          <input type="time" name="hora">
+
+
+          <button class="btn waves-effect waves-light" type="submit" name="action">Enviar
+            <i class="material-icons right">send</i>
+          </button>
+        </div>
+      </form>
+    </div>
+
+      </form>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <footer class="page-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5>Dirección</h5>
+                <p class="grey-text text-lighten-4">Aquí va la dirección</p>
+                <h5>Teléfonos</h5>
+                <p class="grey-text text-lighten-4">Aquí van los teléfonos</p>
+              </div>
+
+              <div class="col l4 offset-l2 s12">
+                <h5>Correo</h5> <span class="white-text">Aquí va el correo</span><br>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            <center>
+            ©GAAX 2017 
+            </center>
+            </div>
+          </div>
+  </footer>
+
+  <!--  Scripts-->
+  <script src="js/jquery-2.1.1.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  <script>
+    $('.datepicker').pickadate({
+      selectMonths: true, // Creates a dropdown to control month
+      selectYears: 99 // Creates a dropdown of 15 years to control year
+    });
+  </script>
+
+  </body>
+</html>
+
+

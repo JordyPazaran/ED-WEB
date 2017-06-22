@@ -1,0 +1,167 @@
+<!-- HECHO POR JORDY XAVIER PAZARAN REYES -->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Jordy Xavier</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  </head>
+  <body>
+
+<ul id="dropdown1" class="dropdown-content">
+<li class=""><a href="texto.html">Inicio</a></li>
+<li ><a href="multi.html">Multimedia</a></li>
+  <li><a href="pdfs.html">PDFs</a></li>
+  <li class="active"><a href="ejer.html">Ejercicios</a></li>
+  <li class="divider"></li>
+  <li><a href="biblio.html">Bibliogrfía</a></li>
+</ul>
+<ul id="dropdown2" class="dropdown-content">
+<li class=""><a href="texto.html">Inicio</a></li>
+   <li ><a href="multi.html">Multimedia</a></li>
+  <li><a href="pdfs.html">PDFs</a></li>
+  <li class="active"><a href="ejer.html">Ejercicios</a></li>
+  <li class="divider"></li>
+  <li><a href="biblio.html">Bibliogrfía</a></li>
+</ul>
+
+    <main>
+      <nav class="nav-extended">
+    <div class="nav-wrapper  grey">
+      <a class="brand-logo center" href="http://www.ingenieria.unam.mx/">&nbsp;&nbsp;&nbsp;<img class="responsive-img" src="resources/fiunam.png" width="40" height="300"/></a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+
+    </div>
+   <div class="row red darken-3">
+    <div class="nav-wrapper ">
+      <ul id="nav-mobile" class="center hide-on-med-and-down">
+              <div class="col s1"></div>
+              <div class="col s3 "><li class=""><a href="index.html">Inicio</a></li></div>
+              <div class="col s3 "> <li class="active"><a class="dropdown-button" href="#!" data-activates="dropdown1">Tutorial<i class="material-icons right"></i></a></li></div>
+              <div class="col s3 "><li class=""><a href="cuestionario.html">Cuestionario</a></li></div>
+              <div class="col s1 "></div>
+              <div class="col s2 "><li class=""><a href="quienes.html">Acerca de mi</a></li></div>
+
+<!-- HECHO POR JORDY XAVIER PAZARAN REYES -->
+
+        </ul>
+      </div>
+    </div>
+
+              
+      <ul class="side-nav red darken-3" id="mobile-demo">
+
+              <div class="chip  grey lighten-2">
+    <img src="resources/fiunam.png" alt="Contact Person">
+    Pazaran Reyes Jordy Xavier
+  </div>
+              <li class=""><a href="index.html">Inicio</a></li>
+              <li class="active"><a class="dropdown-button" href="#!" data-activates="dropdown2">Tutorial<i class="material-icons right"></i></a></li>
+              <li class=""><a href="cuestionario.html">Cuestionario</a></li>
+              <li class=""><a href="quienes.html">Acerca de mi</a></li>
+      </ul>
+    </div>
+  </nav>
+ 
+        <br></br>   <br></br>
+<div class="container">
+    <ul class="collapsible" data-collapsible="accordion">
+    <li>
+      <div class="collapsible-header"><i class="material-icons">whatshot</i>Ejercicio 1</div>
+      <div class="collapsible-body"><span><div class="container"><center>Supongamos que se desea generar en memoria una estructura de árbol binario con unosdatos cuyas relaciones se conocen previamente. Es decir, el usuario va a trasladar alordenador una estructura de árbol conocida. Para hacer esto, se establece una notaciónsecuencial que permita la interpretación simple de las relaciones. Esta notación es similar ala representación secuencial que se comentó para árboles binarios completos, y que seextendió a cualquier árbol arbitrario. La notación consiste en una secuencia de caracteresque indica la información de cada nodo en el árbol completo asociado, de manera que seindica también si algún subárbol está vacío y se supone que la información del subárbolizquierdo va siempre antes que la del subárbol derecho. En realidad se trata de una representación secuencial del recorrido prefijo del árbol. Se considerará, para simplificar,que la información asociada con cada nodo es simplemente un carácter y que los subárbolesvacíos se representan con un '.'. Entonces la entrada al algoritmo de generación puede sersimplemente una cadena de caracteres, donde cada uno de ellos se interpreta como un nododel árbol<br></br></div></center><img src="resources/ejer1.jpg" alt="" class="responsive-img">.</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">whatshot</i>Ejericicio 2</div>
+      <div class="collapsible-body"><span><div class="container"><center>Determinarla equivalencia entre dos árboles binarios. Se dice que dos árboles binarios son equivalentessi presentan la misma topología (la misma estructura)<br></br></div></center><img src="resources/ejer4.jpg" alt="" class="responsive-img">.</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">whatshot</i>Ejercicio 3</div>
+      <div class="collapsible-body"><span><div class="container"><center>El recorrido en preorden de un determinado árbol binario es: GEAIBMCLDFKJH y en inorden es IABEGLDCFMKHJ<br></br> 
+A) Dibujar el árbol binario<br></br></div></center><img src="resources/ejer3.jpg" alt="" class="responsive-img">.</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">whatshot</i>Ejercicio 4</div>
+      <div class="collapsible-body"><span><div class="container"><center>Generar el árbol binario de representación de una expresión algebraica. Para ello se realizanlas siguientes consideraciones:(1) La entrada del programa deberá ser una expresión escrita en notación infija.(2) En las expresiones sólo se tendrán en cuenta los cuatro operadores binariosbásicos: +, -, *, /. No se considerarán paréntesis.(3) Los operandos serán exclusivamente caracteres (1 carácter, 1 operando)<br></br></div></center><img src="resources/ejer4.jpg" alt="" class="responsive-img">.</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">whatshot</i>Ejercicio 5</div>
+      <div class="collapsible-body"><span><div class="container"><center>Realizar el recorrido de árbol. Usando los tres métodos: <br></br>
+A) PREORDEN<br></br>
+B) INORDEN<br></br>
+C) POSTORDEN<br></br></div></center><img src="resources/ejer5.jpg" alt="" class="responsive-img"><br></br> A) PREORDEN: A-B-D-G-K-C-E-H-I-F-J<br></br>
+B) INORDEN: G-K-D-B-A-H-E-I-C-F-J<br></br>
+C) POSTORDEN: K-G-D-B-H-I-E-J-F-C-A<br></br>
+.</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">whatshot</i>Ejercicio 6</div>
+      <div class="collapsible-body"><span><div class="container"><center>Recorrer el siguiente árbol que se muestra a continuación utilizando los tres métodos:<br></br></div></center><img src="resources/ejer6.jpg" alt="" class="responsive-img">.</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">whatshot</i>Ejercicio 7</div>
+      <div class="collapsible-body"><span><div class="container"><center>Del siguiente árbol que se muestra a continuación, sacar su recorrido en preorden, postorden, inorden:<br></br></div></center><img src="resources/ejer7.jpg" alt="" class="responsive-img">.</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">whatshot</i>Ejercicio 8</div>
+      <div class="collapsible-body"><span><div class="container"><center>Dibujar el árbol de tal forma que sus recorridos sean exactamente los siguientes:<br></br></div></center><img src="resources/ejer8.jpg" alt="" class="responsive-img">.</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">whatshot</i>Ejercicio 9</div>
+      <div class="collapsible-body"><span><div class="container"><center>Dibujar el árbol de tal manera que la siguiente secuencia represente un recorrido de árbol de tipo inorden: <br></br>22-43-56-65-87-93-99-120-130-135-140
+<br></br></div></center><img src="resources/ejer9.jpg" alt="" class="responsive-img">.</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">whatshot</i>Ejercicio 10</div>
+      <div class="collapsible-body"><span><div class="container"><center>Realice el árbol e indique con flechas la secuencia del siguiente recorrido en preorden: <br></br>A-B-D-C-E-G-H-F<br></br></div></center><img src="resources/ejer10.jpg" alt="" class="responsive-img">.</span></div>
+    </li>
+  </ul>
+  </div>
+  <br></br>   
+ </main>
+<!-- HECHO POR JORDY XAVIER PAZARAN REYES -->
+     <footer class="page-footer  grey darken-3">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5>Dirección</h5>
+                <p class="grey-text text-lighten-4">Circuito Interior s/n, Coyoacán, Ciudad Universitaria, 04510 Ciudad de México, CDMX
+Facultad de Ingenieria UNAMM</p>
+
+                <h5>Teléfonos</h5>
+                <p class="grey-text text-lighten-4">(52)5565014640</p>
+              </div>
+
+              <div class="col l4 offset-l2 s12">
+                <h5>Correo</h5> <span class="white-text">jordyxavierfi@gmail.com</span><br>
+
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            <center>
+            <a > ©Jordy Xavier </a>
+            </center>
+            </div>
+          </div>
+  </footer>
+
+  <!--  Scripts-->
+  <script src="js/jquery-2.1.1.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      $('.slider').slider({full_width: true});
+    });
+  </script>
+
+    
+
+  </body>
+</html>
